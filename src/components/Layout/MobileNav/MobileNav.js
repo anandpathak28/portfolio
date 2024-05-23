@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./MobileNav.css";
 import { Link } from "react-scroll";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+
 import photo from "../../../images/photo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineMenuFold } from "react-icons/ai";

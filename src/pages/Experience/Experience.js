@@ -88,7 +88,7 @@ const Experience = () => {
             className="vertical-timeline-element--work"
             contentStyle={{ background: "#138781", color: "black" }}
             contentArrowStyle={{ borderRight: "7px solid  #138781" }}
-            date="Jun'1992 - Aug'2009"
+            date="Jun'2006 - Aug'2009"
             iconStyle={{ background: "#138781", color: "#fff" }}
             icon={<SiReact />}
           >

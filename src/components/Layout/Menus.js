@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import "./Menus.css";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+
 import {
   FcAbout,
   FcBiotech,
@@ -20,88 +19,85 @@ const Menus = ({ toggle }) => {
     <>
       {toggle ? (
         <>
-          <Zoom>
-            <div className="navbar-profile-pic">
-              <img src={photo} alt="profile pic" />
+          <div className="navbar-profile-pic">
+            <img src={photo} alt="profile pic" />
+          </div>
+
+          <div className="nav-item">
+            <div className="nav-link">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcHome />
+                Home
+              </Link>
             </div>
-          </Zoom>
+            <div className="nav-link">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcAbout />
+                About
+              </Link>
+            </div>
+            <div className="nav-link">
+              <Link
+                to="edu"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcReadingEbook />
+                Education
+              </Link>
+            </div>
+            <div className="nav-link">
+              <Link
+                to="exp"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcPortraitMode />
+                Work Experience
+              </Link>
+            </div>
+            <div className="nav-link">
+              <Link
+                to="tech"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcBiotech />
+                Tech Stack
+              </Link>
+            </div>
 
-          <Fade left>
-            <div className="nav-item">
-              <div className="nav-link">
-                <Link
-                  to="home"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcHome />
-                  Home
-                </Link>
-              </div>
-              <div className="nav-link">
-                <Link
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcAbout />
-                  About
-                </Link>
-              </div>
-              <div className="nav-link">
-                <Link
-                  to="edu"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcReadingEbook />
-                  Education
-                </Link>
-              </div>
-              <div className="nav-link">
-                <Link
-                  to="exp"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcPortraitMode />
-                  Work Experience
-                </Link>
-              </div>
-              <div className="nav-link">
-                <Link
-                  to="tech"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcBiotech />
-                  Tech Stack
-                </Link>
-              </div>
-
-              <div className="nav-link">
-                <Link
-                  to="proj"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcVideoProjector />
-                  Projects
-                </Link>
-              </div>
-              {/* <div className="nav-link">
+            <div className="nav-link">
+              <Link
+                to="proj"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcVideoProjector />
+                Projects
+              </Link>
+            </div>
+            {/* <div className="nav-link">
                 <Link
                   to="cert"
                   spy={true}
@@ -113,20 +109,19 @@ const Menus = ({ toggle }) => {
                   Certification
                 </Link>
               </div> */}
-              <div className="nav-link">
-                <Link
-                  to="cont"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcBusinessContact />
-                  Contact
-                </Link>
-              </div>
+            <div className="nav-link">
+              <Link
+                to="cont"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                <FcBusinessContact />
+                Contact
+              </Link>
             </div>
-          </Fade>
+          </div>
         </>
       ) : (
         <div className="nav-item">

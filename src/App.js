@@ -7,7 +7,6 @@ import Project from "./pages/Projects/Project";
 import TechStack from "./pages/TechStack/TechStack";
 import About from "./pages/about/About";
 import ScrollToTop from "react-scroll-to-top";
-import Tada from "react-reveal/Tada";
 import MobileNav from "./components/Layout/MobileNav/MobileNav";
 
 function App() {
@@ -26,11 +25,7 @@ function App() {
           <Contact />
         </div>
         <div className="footer pb-3 ms-3">
-          <Tada>
-            <h4 className="text-center">
-              Made With ❤️ Anand Pathak &copy; 2023
-            </h4>
-          </Tada>
+          <h4 className="text-center">Made With ❤️ Anand Pathak &copy; 2023</h4>
         </div>
       </div>
       <ScrollToTop

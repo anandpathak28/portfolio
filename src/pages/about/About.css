@@ -38,6 +38,21 @@
 
 /* Mobile view */
 
+@media (max-width: 900px) {
+  .about img {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about img {
+    margin-left: 10px;
+  }
+  .photo {
+    margin-left: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .about {
     margin: 0;
@@ -50,6 +65,6 @@
   }
 
   .about img {
-    margin-left: 80px;
+    margin-left: 10px;
   }
 }

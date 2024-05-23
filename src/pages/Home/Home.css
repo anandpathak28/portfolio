@@ -63,6 +63,12 @@
 }
 
 /* Mobile view */
+@media (max-width: 700px) {
+  .home-button .btn-cv {
+    margin-top: 10px;
+    margin-left: 3px;
+  }
+}
 @media (max-width: 600px) {
   .home-content {
     padding: 0;
@@ -74,5 +80,9 @@
   }
   .home-content h1 {
     font-size: 24px;
+  }
+
+  .home-button .btn-cv {
+    margin-top: 0px;
   }
 }
