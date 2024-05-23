@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./MobileNav.css";
 import { Link } from "react-scroll";
 
-import photo from "../../../images/photo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import {

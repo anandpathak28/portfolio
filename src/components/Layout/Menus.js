@@ -10,7 +10,6 @@ import {
   FcPortraitMode,
   FcReadingEbook,
   FcVideoProjector,
-  FcVoicePresentation,
 } from "react-icons/fc";
 import photo from "../../images/photo.png";
 
@@ -97,18 +96,7 @@ const Menus = ({ toggle }) => {
                 Projects
               </Link>
             </div>
-            {/* <div className="nav-link">
-                <Link
-                  to="cert"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={100}
-                >
-                  <FcVoicePresentation />
-                  Certification
-                </Link>
-              </div> */}
+
             <div className="nav-link">
               <Link
                 to="cont"
@@ -192,17 +180,7 @@ const Menus = ({ toggle }) => {
               <FcVideoProjector title="Projects" />
             </Link>
           </div>
-          {/* <div className="nav-link">
-            <Link
-              to="cert"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={100}
-            >
-              <FcVoicePresentation title="Certification" />
-            </Link>
-          </div> */}
+
           <div className="nav-link">
             <Link
               to="cont"
